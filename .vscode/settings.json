@@ -1,0 +1,29 @@
+{
+    "C_Cpp.default.compilerPath": "${env:USERPROFILE}/.vscode/extensions/lihram.vscode-tcc-compiler-1.1.4/compiler/",
+    "files.associations": {
+        "*.py": "python",
+        "stdio.h": "c"
+    }
+    ,
+    "terminal.integrated.env.windows": {
+        "PATH": "${env:PATH};${env:USERPROFILE}/.vscode/extensions/lihram.vscode-tcc-compiler-1.1.4/compiler/"
+    }
+    ,
+    "actionButtons": {
+        "commands": [
+            {
+                "name": "Compilar",
+                "color": "white",
+                "command": "tcc.exe ${file} -o ${fileDirname}/${fileBasenameNoExtension}.exe -Wall"
+            },
+            {
+                "name": "Ejecutar",
+                "color": "white",
+                "command": "${fileDirname}/${fileBasenameNoExtension}.exe"
+            }
+        ],
+        "defaultColor": "white",
+        "reloadButton": "↻",
+        "loadNpmCommands": false
+    }
+}
