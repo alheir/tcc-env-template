@@ -3,12 +3,11 @@
     "files.associations": {
         "*.py": "python",
         "stdio.h": "c"
-    }
-    ,
+    },
+    "editor.formatOnSave": true,
     "terminal.integrated.env.windows": {
         "PATH": "${env:PATH};${env:USERPROFILE}/.vscode/extensions/lihram.vscode-tcc-compiler-1.1.4/compiler/"
-    }
-    ,
+    },
     "actionButtons": {
         "commands": [
             {
@@ -25,5 +24,11 @@
         "defaultColor": "white",
         "reloadButton": "↻",
         "loadNpmCommands": false
-    }
+    },
+    "C_Cpp.formatting": "vcFormat",
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine",
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
+    "C_Cpp.vcFormat.newLine.beforeWhileInDoWhile": true,
+    "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction": true,
+    "C_Cpp.vcFormat.newLine.scopeBracesOnSeparateLines": true
 }
